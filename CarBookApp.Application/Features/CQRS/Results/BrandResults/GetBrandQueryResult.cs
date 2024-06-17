@@ -1,15 +1,16 @@
-﻿using System;
+﻿using CarBookApp.Domain.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CarBookApp.Domain.Entities
+namespace CarBookApp.Application.Features.CQRS.Results.BrandResults
 {
-    public class Brand
+    public class GetBrandQueryResult
     {
         public int BrandID { get; set; }
         public string Name { get; set; }
-        public List<Car>  Cars { get; set; }
+        
     }
 }

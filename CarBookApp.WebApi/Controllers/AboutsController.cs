@@ -35,8 +35,8 @@ namespace CarBookApp.WebApi.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetAbout(int id)
         {
-            var values = await _getAboutByIdQueryHandler.Handle(new GetAboutByIdQuery(id));
-            return Ok(values);
+            var value = await _getAboutByIdQueryHandler.Handle(new GetAboutByIdQuery(id));
+            return Ok(value);
         }
 
         [HttpPost]
