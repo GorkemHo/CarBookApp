@@ -1,14 +1,14 @@
-﻿using System;
+﻿using MediatR;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CarBookApp.Domain.Entities
+namespace CarBookApp.Application.Features.Mediator.Commands.LocationCommands
 {
-    public class Location
+    public class CreateLocationCommand : IRequest
     {
-        public int LocationID { get; set; }
         public string Name { get; set; }
     }
 }
